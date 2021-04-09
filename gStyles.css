@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    margin: 0;
+    padding: 0
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    margin: .5rem 0 0 auto
+}
+a{
+    text-decoration: none;
+    color: #000
+}
+a:hover{
+    text-decoration: underline
+}
+nav img{
+     height: 20px;
+}
+main{
+    width: 50%;
+    margin: 7.3rem auto;
+    text-align: center;
+
+}
+.img{
+   
+    width: 60%
+}
+
+input[type="text"]{
+    width: 70%;
+    padding: .5rem;
+    border-radius: 30px;
+    outline: none;
+    border: .1rem solid rgba(128, 128, 128, 0.233)
+}
+
+input[type='text']:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0,);
+        border-bottom: 1.5px solid rgba(128, 128, 128, 0.568);
+             }
+
+
+.btn_container{
+    margin-top: .6rem;
+    
+}
+.btn_container button{
+    padding: .7rem;
+    outline: none;
+    border: .1rem solid rgba(128, 128, 128, 0.233);
+    margin-bottom: .5rem
+}
+
+.language a{
+    color: blue
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.233)
+}
+.footer_top{
+    padding: 1rem;
+}
+.footer_bottom{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    border-top: .1rem solid rgba(128, 128, 128, 0.233)
+}
+
+.left a,
+.right a{
+margin-right: 1rem
+}
+
+/*media querry*/
+
+@media screen and (max-width: 768px){
+
+    nav{
+        margin: .7rem 4rem 0 auto;
+        }
+    
+        nav a,
+        nav img{
+            margin: auto .5rem
+        }
+    nav img:not(:last-child){
+        margin-right: .6rem
+            } 
+            main{
+                margin: 7rem auto
+                }
+            
+                input[type="text"]{
+                    width: 70%;
+                    padding: .2rem;
+                    border-radius: 15px;
+                }
+                .btn_container button{
+                    padding: .2rem;
+                    font-size: .6rem
+                }
+            
+                .language span,    
+                .language a{
+                   font-size: .8rem
+                }
+                .footer_top p,
+                .left a,
+                .right a,
+                .center a{
+                    
+                    font-size: .9rem
+                }
+}
+
+
+
+@media screen and (max-width: 500px){
+    nav{
+    margin: .5rem 5rem 0 auto;
+    }
+
+    nav a,
+    nav img{
+        margin: auto .5rem
+    }
+nav img:not(:last-child){
+    margin-right: .6rem
+        }
+    .img{
+      width: 40%
+    }
+
+main{
+    margin: 7.9rem auto
+    }
+
+    input[type="text"]{
+        width: 75%;
+        padding: 0;
+        border-radius: 15px;
+    }
+    
+    input[type='text']:focus{
+            visibility: hidden;
+        }
+    
+    .btn_container{
+        margin-top: .3rem;   
+    }
+
+    .btn_container button{
+        padding: .2rem;
+        font-size: .6rem
+    }
+
+    .language span,    
+    .language a{
+       font-size: .6rem
+    }
+    .footer_top p,
+    .left a,
+    .right a,
+    .center a{
+        display: block;
+        font-size: .8rem
+    }
+
+
+}
+
